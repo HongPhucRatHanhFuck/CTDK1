@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RoseMoney</title>
+</head>
+<body>
+<h2>Rose Money</h2>
+<script>
+	let Money = prompt("Nhập doanh thu bán hàng để tính hoa hồng");
+	if (Money == null) {
+		document.write("Mong bạn sớm quay lại");
+	} else if (Money === "") {
+		document.write("Vui lòng nhập số tiền doanh thu để được tính tiền hoa hồng")
+	} else {
+		if (Money > 0 && Money <= 10000000) {
+			document.write("Doanh thu của bạn là:" + (Money * 3) / 100);
+		} else if (Money > 10000000 && Money <= 50000000) {
+			document.write("Doanh thu của bạn là:" + (Money * 5) / 100);
+		} else if (Money > 50000000) {
+			document.write("Doanh thu của bạn là:" + (Money * 7) / 100);
+		}
+	}
+	
+</script>
+</body>
+</html>

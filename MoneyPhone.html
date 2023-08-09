@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Money Phone</title>
+</head>
+<body>
+<script>
+	let s = prompt("Nhập tổng số giây mà gia đình bạn đã sử dụng điện thoại bàn");
+	if (s > 0) {
+		document.write("Số tiền mà gia đình bạn cần thanh toán là:" + s * 55);
+	} else if (s == null) {
+		document.write("Mong bạn sớm quay lại");
+	} else if (s === "") {
+		document.write("Mong bạn sớm nhập số giây để biết số tiền thanh toán");
+	} else {
+		if (s<0){
+			document.write("Số giây không hợp lệ");
+		}
+	}
+</script>
+</body>
+</html>
